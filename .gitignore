@@ -1,1 +1,6 @@
+## Folders
 node_modules/
+__tests__/
+
+## Files
+*.txt

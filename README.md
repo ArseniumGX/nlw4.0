@@ -4,7 +4,7 @@ Semana de desenvolvimento de um app do zero ofericida gratuitamente pela equipe 
 
 - [x] Aula 1 - Criação e configuração do server e ferramenas
 - [x] Aula 2 - Criação das rotas e do banco de dados; estruturação básica do app no modelo mvc 
-- [ ] Aula 3 - Testes da aplicação
+- [x] Aula 3 - Testes da aplicação
 - [ ] Aula 4 - Envio de e-mail
 - [ ] Aula 5 - Finalização da API
 

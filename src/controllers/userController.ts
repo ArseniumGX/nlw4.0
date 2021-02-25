@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { getRepository } from 'typeorm'
-import { User } from '../models/User'
+import { getCustomRepository } from 'typeorm'
+import { UsersRepository } from '../repositories'
 
 class UserController
 {
@@ -8,7 +8,7 @@ class UserController
     async create(req: Request, res: Response)
     {
         const { name, email } = req.body
-        const usersRepository = getRepository(User)
+        const usersRepository = getCustomRepository(UsersRepository) // Faz mapeamento da tabela
 
         /* 
           SELECT * FROM 'users' WHERE email = 'email'
@@ -48,7 +48,15 @@ class UserController
         */
 
         /* envia a uma responsta em json das informações salvas em banco */
-        return res.json(user)
+        return res.status(201).json(user)
+    }
+
+    async show(req: Request, res: Response)
+    {
+        const user = getCustomRepository(UsersRepository)
+
+        const all = await user.find()
+        res.status(200).json(all)
     }
 }
 
