@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container
+            {
+                width: 800px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .value
+            {
+                padding: 10px;
+                background-color: #8257e6;
+                color: #fff;
+                border-radius: 15px;
+                width: 15px;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .lvl
+            {
+                display: flex;
+                margin: 10px;
+                justify-content: space-between;
+                width: 350px;
+            }
+
+            .answers
+            {
+                width: 350px;
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <label>Olá <strong>{{name}}</strong>! Tudo bem?</label>
+            <h3>{{title}}</h3>
+            <br>
+            <strong>{{description}}</strong>
+
+            <div class="lvl">
+                <strong>Pouco Provável</strong>
+                <strong>Muito Provável</strong>
+            </div>
+
+            <div class="answers">
+                <a href="" class="value">1</a>
+                <a href="" class="value">2</a>
+                <a href="" class="value">3</a>
+                <a href="" class="value">4</a>
+                <a href="" class="value">5</a>
+                <a href="" class="value">6</a>
+                <a href="" class="value">7</a>
+                <a href="" class="value">8</a>
+                <a href="" class="value">9</a>
+                <a href="" class="value">10</a>
+            </div>
+
+            <br><br>
+
+            <strong>Sua opinião é importante para mim</strong>
+
+            <h3>Equipe | <strong>NLW 4.0</strong></h3>
+        </div>
+    </body>
+</html>
